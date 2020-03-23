@@ -7,6 +7,7 @@
 /* body */
 body {
 	color: white;
+	overflow-y: scroll;
 	background: rgb(0, 0, 0);
 	background: linear-gradient(
 		90deg,
@@ -41,11 +42,23 @@ a:visited {
 	color: white;
 }
 
+/* searchbar */
+#searchbar {
+	margin-bottom: 30px;
+	background-color: white;
+	border-radius: 28px;
+	border: 1px solid white;
+	font-family: Arial;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+}
+
 /* table */
 .content-table {
 	border-collapse: collapse;
 	font-size: 0.9em;
-	min-width: 400px;
+	width: 750px;
 	border-radius: 5px 5px 0 0;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -53,6 +66,7 @@ a:visited {
 }
 
 .content-table thead tr {
+	/* table header */
 	background-color: #cc0000;
 	color: #ffffff;
 	text-align: left;
@@ -76,18 +90,15 @@ a:visited {
 	background-color: #413c3c;
 }
 
-.content-table tbody tr:last-of-type {
-	/* utsó vonal */
-	border-bottom: 2px solid #cc0000;
-}
-
 .content-table tbody tr.dlc {
+	/* dlc */
 	font-weight: bold;
 	font-style: italic;
 	color: #cc0000;
 }
 
 .content-table tbody tr.rq {
+	/* rage quit */
 	font-weight: bold;
 	color: white;
 	background-color: black;
