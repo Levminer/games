@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="shortcut icon" href="https://img.icons8.com/metro/26/000000/controller.png" type="image/x-icon" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Games recommended by me!" />
 		<meta charset="UTF-8" />
 		<title>Games</title>
 		<!-- favicon -->
-		<link rel="shortcut icon" href="https://img.icons8.com/metro/26/000000/controller.png" type="image/x-icon" />
 		<!-- css -->
-		<link rel="stylesheet" href="assets/style.css" />
+		<link rel="stylesheet" href="./assets/index.css" />
 		<!-- js -->
-		<script src="assets/script.js"></script>
+		<script src="./assets/index.js"></script>
 	</head>
 	<body>
-		<div class="text">
-			<h1>Games recommended by me</h1>
+		<div class="title">
+			<h1>Games recommended by me!</h1>
+		</div>
+
+		<div class="subtitle">
+			<h2>3D Games</h2>
 		</div>
 
 		<div class="search">
-			<input type="text" id="searchbar" onkeyup="search()" placeholder="Search for names..." />
+			<input type="text" id="searchbar0" onkeyup="search0()" placeholder="Search for 3D game names" />
 		</div>
 
-		<div class="table">
-			<table id="table" align="center" class="content-table">
+		<div class="table0">
+			<table id="table0" align="center" class="content-table">
 				<thead>
 					<tr>
 						<th>Completed</th>
@@ -111,7 +116,7 @@
 						<td>Call of Duty: Ghosts</td>
 						<td>-</td>
 						<td>4h 40m</td>
-						<td>9.2</td>
+						<td>9.4</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" checked /></td>
@@ -120,6 +125,22 @@
 						<td>-</td>
 						<td>7h 15m</td>
 						<td>8.6</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="radio" checked /></td>
+						<td>EN</td>
+						<td>Call of Duty: Infinite Warfare</td>
+						<td>-</td>
+						<td>7h 20m</td>
+						<td>8.5</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="radio" checked /></td>
+						<td>EN</td>
+						<td>Call of Duty: Advanced Warfare</td>
+						<td>-</td>
+						<td>6h 55m</td>
+						<td>8.8</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" checked class="radio" /></td>
@@ -316,26 +337,18 @@
 					<tr>
 						<td><input type="checkbox" checked class="radio" /></td>
 						<td>EN</td>
-						<td>Unravel</td>
-						<td>-</td>
-						<td>8h</td>
-						<td>9.2</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" class="radio" /></td>
-						<td>EN</td>
-						<td>Unravel 2</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
-						<td>EN</td>
 						<td>Superhot</td>
 						<td>-</td>
 						<td>2h 50m</td>
 						<td>8.2</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" checked class="radio" /></td>
+						<td>EN</td>
+						<td>The Walking Dead (EP1,EP2,EP3)</td>
+						<td>-</td>
+						<td>(10h 15m) (-) (-)</td>
+						<td>8.5</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" checked class="radio" /></td>
@@ -380,7 +393,7 @@
 					<tr>
 						<td><input type="checkbox" class="radio" /></td>
 						<td>HU</td>
-						<td>Resident Evil 3 Remake</td>
+						<td>Resident Evil 7</td>
 						<td>-</td>
 						<td>-</td>
 						<td>-</td>
@@ -412,8 +425,66 @@
 				</tbody>
 			</table>
 		</div>
+
+		<div class="subtitle">
+			<h2>2D Games</h2>
+		</div>
+
+		<div class="search">
+			<input type="text" id="searchbar1" onkeyup="search1()" placeholder="Search for 2D game names" />
+		</div>
+
+		<div class="table1">
+			<table id="table1" align="center" class="content-table">
+				<thead>
+					<tr>
+						<th>Completed</th>
+						<th>Language</th>
+						<th>Name</th>
+						<th>Replayed</th>
+						<th>Playtime</th>
+						<th>Score</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox" checked class="radio" /></td>
+						<td>EN</td>
+						<td>Deadbolt</td>
+						<td>-</td>
+						<td>-</td>
+						<td>9.5</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" checked class="radio" /></td>
+						<td>EN</td>
+						<td>My Friend Pedro</td>
+						<td>-</td>
+						<td>-</td>
+						<td>8.8</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" checked class="radio" /></td>
+						<td>EN</td>
+						<td>Unravel</td>
+						<td>-</td>
+						<td>8h</td>
+						<td>9.2</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="radio" /></td>
+						<td>EN</td>
+						<td>Unravel 2</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
 		<footer>
-			Created by: <a href="https://www.levminer.me">Levminer</a> - Games 1.7 - Sourcecode:
+			Created by: <a href="https://www.levminer.me">Levminer</a> - Games 2.0 - Sourcecode:
 			<a href="https://github.com/Levminer/games">GitHub</a>
 		</footer>
 	</body>
