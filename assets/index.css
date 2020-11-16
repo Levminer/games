@@ -1,78 +1,27 @@
-/* all */
-* {
-	text-align: center;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
 /* body */
 body {
 	color: white;
+	text-align: center;
 	overflow-y: scroll;
-	background: rgb(0, 0, 0);
-	background: linear-gradient(
-		90deg,
-		rgba(0, 0, 0, 1) 0%,
-		rgba(45, 40, 40, 1) 20%,
-		rgba(45, 40, 40, 1) 50%,
-		rgba(45, 40, 40, 1) 80%,
-		rgba(0, 0, 0, 1) 100%
-	);
+	overflow-x: hidden;
+	background: rgb(42, 36, 36);
+	background: radial-gradient(circle, rgba(42, 36, 36, 1) 37%, rgba(0, 0, 0, 1) 100%);
 }
 
 /* footer */
 footer {
-	top: 50px;
-	color: white;
-	position: relative;
-	right: 0;
-	left: 0;
-	text-align: center;
-	margin: 20px;
-	padding: 10px;
-	font-size: 25px;
-}
-
-/* link */
-a:link {
-	text-decoration: none;
-	color: white;
-}
-
-a:visited {
-	text-decoration: none;
-	color: white;
-}
-
-/* searchbar */
-#searchbar0 {
-	margin-bottom: 30px;
-	background-color: white;
-	border-radius: 28px;
-	border: 1px solid white;
-	font-family: Arial;
-	font-size: 17px;
-	padding: 16px 31px;
-	text-decoration: none;
-	outline: none;
-}
-
-#searchbar1 {
-	margin-bottom: 30px;
-	background-color: white;
-	border-radius: 28px;
-	border: 1px solid white;
-	font-family: Arial;
-	font-size: 17px;
-	padding: 16px 31px;
-	text-decoration: none;
-	outline: none;
+	font-size: 2rem;
+	margin-bottom: 25px;
 }
 
 /* table */
 .content-table {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	border-collapse: collapse;
-	font-size: 0.9em;
-	width: 760px;
+	font-size: 1rem;
+	width: 800px;
 	border-radius: 5px 5px 0 0;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -81,7 +30,7 @@ a:visited {
 
 .content-table thead tr {
 	/* table header */
-	background-color: #cc0000;
+	background-color: rgb(222, 10, 10);
 	color: #ffffff;
 	text-align: left;
 	font-weight: bold;
@@ -89,8 +38,8 @@ a:visited {
 
 .content-table th,
 .content-table td {
-	/* betűszin */
-	padding: 12px 15px;
+	text-align: center;
+	padding: 25px 15px;
 	color: white;
 }
 
@@ -125,7 +74,7 @@ a:visited {
 	appearance: none;
 	display: inline-block;
 	position: relative;
-	background-color: rgb(204, 0, 0);
+	background-color: rgb(222, 10, 10);
 	color: rgb(255, 255, 255);
 	top: 4px;
 	height: 20px;
@@ -147,12 +96,44 @@ a:visited {
 	font-weight: bold;
 }
 .radio:hover {
-	background-color: rgb(204, 0, 0);
+	background-color: rgb(222, 10, 10);
 }
 .radio:checked {
-	background-color: rgb(204, 0, 0);
+	background-color: rgb(222, 10, 10);
 }
 
 .table2 {
 	position: relative;
+}
+
+.center {
+	top: 0;
+	height: 350px;
+	width: 1050px;
+}
+
+input:focus::placeholder {
+	transition: 0.2s ease-in;
+	color: transparent;
+}
+
+input:hover::placeholder {
+	transition: 0.2s ease-in;
+	color: transparent;
+}
+
+.input1 {
+	background-color: white;
+	color: black;
+	border-color: white;
+}
+
+.input1:hover {
+	background-color: var(--df_gray);
+	color: rgb(255, 255, 255);
+	border-color: white;
+}
+
+.input1::placeholder {
+	color: black;
 }

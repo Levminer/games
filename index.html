@@ -6,27 +6,24 @@
 		<meta name="description" content="Games recommended by me!" />
 		<meta charset="UTF-8" />
 		<title>Games</title>
-		<!-- favicon -->
 		<!-- css -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<link rel="stylesheet" href="https://cdn.levminer.com/css/dragonfly/dragonfly@1.1.0.css" />
 		<link rel="stylesheet" href="./assets/index.css" />
 		<!-- js -->
-		<script src="./assets/index.js"></script>
+		<script defer src="./assets/index.js"></script>
 	</head>
 	<body>
-		<div class="title">
+		<div class="center animate__animated animate__slideInDown">
 			<h1>Games recommended by me!</h1>
-		</div>
 
-		<div class="subtitle">
 			<h2>3D Games</h2>
+
+			<input type="text" id="searchbar0" class="input1" onkeyup="search0()" placeholder="Search for 3D game names" />
 		</div>
 
-		<div class="search">
-			<input type="text" id="searchbar0" onkeyup="search0()" placeholder="Search for 3D game names" />
-		</div>
-
-		<div class="table0">
-			<table id="table0" align="center" class="content-table">
+		<div class="table0 animate__animated animate__fadeIn">
+			<table id="table0" class="content-table">
 				<thead>
 					<tr>
 						<th>Completed</th>
@@ -39,7 +36,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><input type="checkbox" class="radio" checked /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Battlefield 1</td>
 						<td>-</td>
@@ -47,7 +44,7 @@
 						<td>7.5</td>
 					</tr>
 					<tr class="rq">
-						<td><input type="checkbox" class="radio" checked /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Battlefield 4</td>
 						<td>-</td>
@@ -55,7 +52,7 @@
 						<td>3.0</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="radio" checked /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Beyond Two Souls</td>
 						<td>-</td>
@@ -63,7 +60,7 @@
 						<td>9.5</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Blair Witch</td>
 						<td>-</td>
@@ -71,7 +68,7 @@
 						<td>7.5</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Call of Duty: Black Ops</td>
 						<td>-</td>
@@ -79,7 +76,7 @@
 						<td>9.0</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Call of Duty: Black Ops 2</td>
 						<td>-</td>
@@ -87,7 +84,7 @@
 						<td>8.5</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="radio" checked /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Call of Duty: Modern Warfare</td>
 						<td>-</td>
@@ -95,7 +92,7 @@
 						<td>8.9</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Call of Duty: Modern Warfare 2</td>
 						<td>-</td>
@@ -103,7 +100,7 @@
 						<td>8.8</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Call of Duty: Modern Warfare 3</td>
 						<td>-</td>
@@ -111,7 +108,7 @@
 						<td>8.7</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Call of Duty: Ghosts</td>
 						<td>-</td>
@@ -119,7 +116,7 @@
 						<td>9.4</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="radio" checked /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Call of Duty: World At War</td>
 						<td>-</td>
@@ -127,7 +124,7 @@
 						<td>8.6</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="radio" checked /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Call of Duty: Infinite Warfare</td>
 						<td>-</td>
@@ -135,7 +132,7 @@
 						<td>8.5</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="radio" checked /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Call of Duty: Advanced Warfare</td>
 						<td>-</td>
@@ -143,7 +140,7 @@
 						<td>8.8</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Dishonored</td>
 						<td>-</td>
@@ -151,7 +148,7 @@
 						<td>9.3</td>
 					</tr>
 					<tr class="dlc">
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Dishonored: The Knife of Dunwall</td>
 						<td>-</td>
@@ -159,7 +156,7 @@
 						<td>9.2</td>
 					</tr>
 					<tr class="dlc">
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Dishonored: The Brigmore Witches</td>
 						<td>-</td>
@@ -167,7 +164,7 @@
 						<td>9.0</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled /></td>
 						<td>EN</td>
 						<td>Dishonored 2</td>
 						<td>-</td>
@@ -175,7 +172,7 @@
 						<td>-</td>
 					</tr>
 					<tr class="dlc">
-						<td><input type="checkbox" class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled /></td>
 						<td>EN</td>
 						<td>Dishonored 2: Death of the Outsider</td>
 						<td>-</td>
@@ -183,15 +180,15 @@
 						<td>-</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Far Cry 3</td>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>(-) (11h 50m)</td>
 						<td>9.8</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Far Cry 4</td>
 						<td>-</td>
@@ -199,7 +196,7 @@
 						<td>9.6</td>
 					</tr>
 					<tr class="dlc">
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Far Cry 4: Valley of the Yetis</td>
 						<td>-</td>
@@ -207,23 +204,23 @@
 						<td>9.9</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Far Cry Primal</td>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>(-) (17h)</td>
 						<td>10</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Far Cry 5</td>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>(-) (19h 20m)</td>
 						<td>9.9</td>
 					</tr>
 					<tr class="dlc">
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Far Cry 5: Dead Living Zombies</td>
 						<td>-</td>
@@ -231,7 +228,7 @@
 						<td>9.1</td>
 					</tr>
 					<tr class="dlc">
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Far Cry 5: Hours of Darkness</td>
 						<td>-</td>
@@ -239,7 +236,7 @@
 						<td>9.5</td>
 					</tr>
 					<tr class="dlc">
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Far Cry 5: Lost On Mars</td>
 						<td>-</td>
@@ -247,15 +244,15 @@
 						<td>9.3</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Far Cry New Dawn</td>
-						<td><input type="checkbox" checked class="radio"</td>
+						<td><input type="checkbox" class="radio" disabled checked/td></td>
 						<td>(-) (11h 10m)</td>
 						<td>9.7</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Firewatch</td>
 						<td>-</td>
@@ -263,7 +260,7 @@
 						<td>9.2</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Kona</td>
 						<td>-</td>
@@ -271,7 +268,7 @@
 						<td>8.8</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Grand Theft Auto V</td>
 						<td>-</td>
@@ -279,7 +276,7 @@
 						<td>9.9</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Heavy Rain</td>
 						<td>-</td>
@@ -287,7 +284,7 @@
 						<td>9.4</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Metro: Last Light Redux</td>
 						<td>-</td>
@@ -295,7 +292,7 @@
 						<td>8.9</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Metro: 2033 Redux</td>
 						<td>-</td>
@@ -303,7 +300,7 @@
 						<td>9.0</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Observer</td>
 						<td>-</td>
@@ -311,7 +308,7 @@
 						<td>9.4</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Outlast</td>
 						<td>-</td>
@@ -319,7 +316,7 @@
 						<td>6.9</td>
 					</tr>
 					<tr class="dlc">
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Outlast: Whistleblower</td>
 						<td>-</td>
@@ -327,7 +324,7 @@
 						<td>7.0</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Outlast 2</td>
 						<td>-</td>
@@ -335,7 +332,7 @@
 						<td>7.2</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Superhot</td>
 						<td>-</td>
@@ -343,7 +340,7 @@
 						<td>8.2</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>The Walking Dead (EP1,EP2,EP3)</td>
 						<td>-</td>
@@ -351,7 +348,7 @@
 						<td>8.5</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>The Long Dark (EP1,EP2,EP3)</td>
 						<td>-</td>
@@ -359,15 +356,15 @@
 						<td>8.5</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Tomb Raider 2013</td>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>(-) (7h 40m)</td>
 						<td>9.0</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Rise of the Tomb Raider</td>
 						<td>-</td>
@@ -375,7 +372,7 @@
 						<td>9.2</td>
 					</tr>
 					<tr class="dlc">
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Rise of the Tomb Raider: Baba Yaga</td>
 						<td>-</td>
@@ -383,7 +380,7 @@
 						<td>9.0</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Resident Evil 2 Remake</td>
 						<td>-</td>
@@ -391,7 +388,7 @@
 						<td>9.4</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled /></td>
 						<td>HU</td>
 						<td>Resident Evil 7</td>
 						<td>-</td>
@@ -399,7 +396,7 @@
 						<td>-</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Watch Dogs</td>
 						<td>-</td>
@@ -407,7 +404,7 @@
 						<td>8.8</td>
 					</tr>
 					<tr class="dlc">
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>HU</td>
 						<td>Watch Dogs: Bad Blood</td>
 						<td>-</td>
@@ -415,7 +412,7 @@
 						<td>8.7</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Watch Dogs 2</td>
 						<td>-</td>
@@ -426,12 +423,12 @@
 			</table>
 		</div>
 
-		<div class="subtitle">
-			<h2>2D Games</h2>
-		</div>
+		<div class="center">
+			<h1>Also good games!</h1>
 
-		<div class="search">
-			<input type="text" id="searchbar1" onkeyup="search1()" placeholder="Search for 2D game names" />
+			<h2>2D Games</h2>
+
+			<input type="text" id="searchbar1" class="input1" onkeyup="search1()" placeholder="Search for 2D game names" />
 		</div>
 
 		<div class="table1">
@@ -448,7 +445,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Deadbolt</td>
 						<td>-</td>
@@ -456,7 +453,7 @@
 						<td>9.5</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>My Friend Pedro</td>
 						<td>-</td>
@@ -464,7 +461,7 @@
 						<td>8.8</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" checked class="radio" /></td>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>EN</td>
 						<td>Unravel</td>
 						<td>-</td>
@@ -479,13 +476,21 @@
 						<td>-</td>
 						<td>-</td>
 					</tr>
+					<tr>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
+						<td>EN</td>
+						<td>Zombotron</td>
+						<td>-</td>
+						<td>5h 50m</td>
+						<td>8.8</td>
+					</tr>
 				</tbody>
 			</table>
 		</div>
 
 		<footer>
-			Created by: <a href="https://www.levminer.me">Levminer</a> - Games 2.0 - Sourcecode:
-			<a href="https://github.com/Levminer/games">GitHub</a>
+			Created by: <a class="link2" href="https://www.levminer.com">Levminer</a> - Games 2.1 - Sourcecode:
+			<a class="link2" href="https://github.com/Levminer/games">GitHub</a>
 		</footer>
 	</body>
 </html>
