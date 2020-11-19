@@ -11,7 +11,7 @@ body {
 /* footer */
 footer {
 	font-size: 2rem;
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 }
 
 /* table */
@@ -21,8 +21,8 @@ footer {
 	margin-right: auto;
 	border-collapse: collapse;
 	font-size: 1rem;
-	width: 800px;
-	border-radius: 5px 5px 0 0;
+	width: 1000px;
+	border-radius: 30px;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 	background-color: #808080;
@@ -109,7 +109,7 @@ footer {
 .center {
 	top: 0;
 	height: 350px;
-	width: 1050px;
+	width: 1000px;
 }
 
 input:focus::placeholder {
@@ -123,6 +123,7 @@ input:hover::placeholder {
 }
 
 .input1 {
+	font-size: 1.5rem;
 	background-color: white;
 	color: black;
 	border-color: white;
