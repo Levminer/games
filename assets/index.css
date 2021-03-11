@@ -4,8 +4,6 @@ body {
 	text-align: center;
 	overflow-y: scroll;
 	overflow-x: hidden;
-	background: rgb(42, 36, 36);
-	background: radial-gradient(circle, rgba(42, 36, 36, 1) 37%, rgba(0, 0, 0, 1) 100%);
 }
 
 /* footer */
@@ -25,7 +23,7 @@ footer {
 	border-radius: 30px;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-	background-color: #808080;
+	background-color: rgb(30, 30, 30);
 }
 
 .content-table thead tr {
@@ -48,9 +46,14 @@ footer {
 	border-bottom: 1px solid #ffffff;
 }
 
+.content-table tbody tr:last-child {
+	/* minden 2. */
+	border: none !important;
+}
+
 .content-table tbody tr:nth-of-type(even) {
 	/* minden 2. */
-	background-color: #413c3c;
+	background-color: rgb(20, 20, 20);
 }
 
 .content-table tbody tr.dlc {
@@ -58,13 +61,6 @@ footer {
 	font-weight: bold;
 	font-style: italic;
 	color: #cc0000;
-}
-
-.content-table tbody tr.rq {
-	/* rage quit */
-	font-weight: bold;
-	color: white;
-	background-color: black;
 }
 
 /* radio */
@@ -81,7 +77,6 @@ footer {
 	width: 20px;
 	border: 0;
 	border-radius: 50px;
-	cursor: pointer;
 	margin-right: 7px;
 	outline: none;
 	font-weight: bold;
@@ -112,16 +107,6 @@ footer {
 	width: 1000px;
 }
 
-input:focus::placeholder {
-	transition: 0.2s ease-in;
-	color: transparent;
-}
-
-input:hover::placeholder {
-	transition: 0.2s ease-in;
-	color: transparent;
-}
-
 .input1 {
 	font-size: 1.5rem;
 	background-color: white;
@@ -137,4 +122,12 @@ input:hover::placeholder {
 
 .input1::placeholder {
 	color: black;
+}
+
+.table-sortable th {
+	cursor: pointer;
+}
+
+footer {
+	background-color: rgb(10, 10, 10);
 }

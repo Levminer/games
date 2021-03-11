@@ -8,28 +8,32 @@
 		<title>Games</title>
 		<!-- css -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-		<link rel="stylesheet" href="https://cdn.levminer.com/css/dragonfly/dragonfly@1.1.0.css" />
+		<link rel="stylesheet" href="https://cdn.levminer.com/css/dragonfly/dragonfly@1.4.0.css" />
 		<link rel="stylesheet" href="./assets/index.css" />
 		<!-- js -->
 		<script defer src="./assets/index.js"></script>
 	</head>
 	<body>
-		<div class="center animate__animated animate__slideInDown">
-			<h1>Games recommended by me!</h1>
+		<div class="center animate__animated animate__fadeIn">
+			<h1 class="animate__animated animate__backInDown">Games recommended by me!</h1>
 
-			<h2>3D Games</h2>
+			<h2 class="animate__animated animate__bounce">3D Games</h2>
 
-			<input type="text" id="searchbar0" class="input1" onkeyup="search0()" placeholder="Search for 3D game names" />
+			<input
+				type="text"
+				id="searchbar0"
+				class="input1 animate__animated animate__backInUp"
+				onkeyup="search0()"
+				placeholder="Search for 3D game names"
+			/>
 		</div>
 
 		<div class="table0 animate__animated animate__fadeIn">
-			<table id="table0" class="content-table">
+			<table id="table0" class="content-table table-sortable">
 				<thead>
 					<tr>
 						<th>Completed</th>
-						<th>Language</th>
 						<th>Name</th>
-						<th>Replayed</th>
 						<th>Playtime</th>
 						<th>Score</th>
 					</tr>
@@ -37,481 +41,361 @@
 				<tbody>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>A Way Out</td>
-						<td>-</td>
 						<td>5h 20m</td>
 						<td>8.5</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Battlefield 1</td>
-						<td>-</td>
 						<td>5h 50m</td>
-						<td>7.5</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
-						<td>Battlefield 3</td>
-						<td>-</td>
-						<td>4h 45m</td>
 						<td>7.3</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
-						<td>Battlefield 4</td>
-						<td>-</td>
-						<td>5h 20m</td>
-						<td>4.9</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" class="radio" /></td>
-						<td>EN</td>
-						<td>Battlefield V</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
+						<td>Battlefield 3</td>
+						<td>4h 45m</td>
+						<td>7.5</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
+						<td>Battlefield 4</td>
+						<td>5h 20m</td>
+						<td>3.5</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
+						<td>Battlefield V</td>
+						<td>5h 40m</td>
+						<td>7.1</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>Battlefield Hardline</td>
-						<td>-</td>
 						<td>5h 55m</td>
 						<td>9.6</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Beyond Two Souls</td>
-						<td>-</td>
 						<td>8h 45m</td>
 						<td>9.5</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Blair Witch</td>
-						<td>-</td>
 						<td>4h 45m</td>
 						<td>7.5</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Call of Duty: Black Ops</td>
-						<td>-</td>
 						<td>5h 30m</td>
 						<td>9.0</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Call of Duty: Black Ops 2</td>
-						<td>-</td>
 						<td>6h 10m</td>
 						<td>8.5</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Call of Duty: Modern Warfare</td>
-						<td>-</td>
 						<td>6h 5m</td>
 						<td>8.9</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Call of Duty: Modern Warfare 2</td>
-						<td>-</td>
 						<td>4h 30m</td>
 						<td>8.8</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Call of Duty: Modern Warfare 3</td>
-						<td>-</td>
 						<td>4h 20m</td>
 						<td>8.7</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Call of Duty: Ghosts</td>
-						<td>-</td>
 						<td>4h 40m</td>
 						<td>9.4</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Call of Duty: World At War</td>
-						<td>-</td>
 						<td>7h 15m</td>
-						<td>8.6</td>
+						<td>8.4</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Call of Duty: Infinite Warfare</td>
-						<td>-</td>
 						<td>7h 20m</td>
-						<td>8.5</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
-						<td>Call of Duty: Advanced Warfare</td>
-						<td>-</td>
-						<td>6h 55m</td>
 						<td>8.8</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
-						<td>Cyberpunk</td>
-						<td>-</td>
-						<td>16h 50m</td>
-						<td>9.5</td>
+						<td>Call of Duty: Advanced Warfare</td>
+						<td>6h 55m</td>
+						<td>8.6</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
+						<td>Cyberpunk</td>
+						<td>16h 50m</td>
+						<td>9.4</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>Dishonored</td>
 						<td>-</td>
-						<td>-</td>
-						<td>9.3</td>
+						<td>9.4</td>
 					</tr>
 					<tr class="dlc">
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Dishonored: The Knife of Dunwall</td>
-						<td>-</td>
 						<td>-</td>
 						<td>9.2</td>
 					</tr>
 					<tr class="dlc">
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Dishonored: The Brigmore Witches</td>
-						<td>-</td>
 						<td>-</td>
 						<td>9.0</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled /></td>
-						<td>EN</td>
 						<td>Dishonored 2</td>
-						<td>-</td>
 						<td>-</td>
 						<td>-</td>
 					</tr>
 					<tr class="dlc">
 						<td><input type="checkbox" class="radio" disabled /></td>
-						<td>EN</td>
 						<td>Dishonored 2: Death of the Outsider</td>
-						<td>-</td>
 						<td>-</td>
 						<td>-</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Far Cry 3</td>
-						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>(-) (11h 50m)</td>
 						<td>9.8</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Far Cry 4</td>
-						<td>-</td>
 						<td>-</td>
 						<td>9.6</td>
 					</tr>
 					<tr class="dlc">
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Far Cry 4: Valley of the Yetis</td>
-						<td>-</td>
 						<td>-</td>
 						<td>9.9</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Far Cry Primal</td>
-						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>(-) (17h)</td>
 						<td>10</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Far Cry 5</td>
-						<td><input type="checkbox" class="radio" disabled checked /></td>
 						<td>(-) (19h 20m)</td>
 						<td>9.9</td>
 					</tr>
 					<tr class="dlc">
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Far Cry 5: Dead Living Zombies</td>
-						<td>-</td>
 						<td>1h 20m</td>
 						<td>9.1</td>
 					</tr>
 					<tr class="dlc">
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Far Cry 5: Hours of Darkness</td>
-						<td>-</td>
 						<td>2h 10m</td>
 						<td>9.5</td>
 					</tr>
 					<tr class="dlc">
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Far Cry 5: Lost On Mars</td>
-						<td>-</td>
 						<td>3h 55m</td>
 						<td>9.3</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Far Cry New Dawn</td>
-						<td><input type="checkbox" class="radio" disabled checked/td></td>
 						<td>(-) (11h 10m)</td>
 						<td>9.7</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Firewatch</td>
-						<td>-</td>
 						<td>-</td>
 						<td>9.2</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Grand Theft Auto V</td>
-						<td>-</td>
-						<td>29h</td>
+						<td>28h 50m</td>
 						<td>10</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Hitman</td>
-						<td>-</td>
 						<td>8h 30m</td>
-						<td>9.2</td>
+						<td>9.0</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Kona</td>
-						<td>-</td>
 						<td>-</td>
 						<td>8.8</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Heavy Rain</td>
-						<td>-</td>
 						<td>8h 20m</td>
 						<td>9.4</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Metro: Last Light Redux</td>
-						<td>-</td>
 						<td>7h 15m</td>
 						<td>8.9</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Metro: 2033 Redux</td>
-						<td>-</td>
 						<td>7h 40m</td>
 						<td>9.0</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled /></td>
-						<td>EN</td>
 						<td>Mirror's Edge</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
+						<td>5h 45m</td>
+						<td>8.5</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled /></td>
-						<td>EN</td>
 						<td>Mirror's Edge Catalyst</td>
-						<td>-</td>
 						<td>-</td>
 						<td>-</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Observer</td>
-						<td>-</td>
 						<td>5h 10m</td>
 						<td>9.4</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Outlast</td>
-						<td>-</td>
 						<td>-</td>
 						<td>6.9</td>
 					</tr>
 					<tr class="dlc">
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Outlast: Whistleblower</td>
-						<td>-</td>
 						<td>-</td>
 						<td>7.0</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Outlast 2</td>
-						<td>-</td>
 						<td>-</td>
 						<td>7.2</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Superhot</td>
-						<td>-</td>
 						<td>2h 50m</td>
 						<td>8.2</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
-						<td>The Walking Dead (EP1,EP2,EP3)</td>
-						<td>-</td>
-						<td>(10h 15m) (-) (-)</td>
-						<td>8.5</td>
+						<td>The Walking Dead {}EP1,EP2,EP3}</td>
+						<td>{10h 15m} {-} {-}</td>
+						<td>8.8</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
-						<td>The Long Dark (EP1,EP2,EP3)</td>
-						<td>-</td>
-						<td>(-) (-) (8h)</td>
-						<td>8.5</td>
+						<td>The Long Dark {EP1,EP2,EP3}</td>
+						<td>{-} {-} {8h 5m}</td>
+						<td>8.3</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
-						<td>Tomb Raider 2013</td>
-						<td><input type="checkbox" class="radio" disabled checked /></td>
+						<td>Tomb Raider</td>
 						<td>(-) (7h 40m)</td>
 						<td>9.0</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Rise of the Tomb Raider</td>
-						<td>-</td>
 						<td>14h 15m</td>
 						<td>9.2</td>
 					</tr>
 					<tr class="dlc">
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Rise of the Tomb Raider: Baba Yaga</td>
-						<td>-</td>
 						<td>-</td>
 						<td>9.0</td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="radio" disabled  /></td>
-						<td>EN</td>
+						<td><input type="checkbox" class="radio" disabled /></td>
 						<td>Shadow of the Tomb Raider</td>
-						<td>-</td>
 						<td>-</td>
 						<td>-</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Resident Evil 2 Remake</td>
-						<td>-</td>
 						<td>9h 40m</td>
 						<td>9.4</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Resident Evil 7</td>
-						<td>-</td>
 						<td>7h 50m</td>
 						<td>9.0</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Watch Dogs</td>
-						<td>-</td>
 						<td>-</td>
 						<td>8.8</td>
 					</tr>
 					<tr class="dlc">
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>HU</td>
 						<td>Watch Dogs: Bad Blood</td>
-						<td>-</td>
 						<td>-</td>
 						<td>8.7</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Watch Dogs 2</td>
-						<td>-</td>
 						<td>17h 15m</td>
 						<td>8.5</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Wolfenstein: The New Order</td>
-						<td>-</td>
 						<td>8h 14m</td>
 						<td>9.0</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled /></td>
-						<td>EN</td>
 						<td>Wolfenstein: The Old Blood</td>
-						<td>-</td>
 						<td>-</td>
 						<td>-</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled /></td>
-						<td>EN</td>
 						<td>Wolfenstein II: The New Colossus</td>
-						<td>-</td>
 						<td>-</td>
 						<td>-</td>
 					</tr>
@@ -532,9 +416,7 @@
 				<thead>
 					<tr>
 						<th>Completed</th>
-						<th>Language</th>
 						<th>Name</th>
-						<th>Replayed</th>
 						<th>Playtime</th>
 						<th>Score</th>
 					</tr>
@@ -542,58 +424,46 @@
 				<tbody>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Deadbolt</td>
-						<td>-</td>
 						<td>-</td>
 						<td>9.5</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>My Friend Pedro</td>
-						<td>-</td>
 						<td>-</td>
 						<td>8.8</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>This War of Mine</td>
-						<td>-</td>
 						<td>8h 10m</td>
-						<td>9.5</td>
+						<td>9.6</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
 						<td>Unravel</td>
-						<td>-</td>
 						<td>8h</td>
-						<td>9.2</td>
-					</tr>
-					<tr>
-						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
-						<td>Unravel 2</td>
-						<td>-</td>
-						<td>4h 50m</td>
 						<td>9.0</td>
 					</tr>
 					<tr>
 						<td><input type="checkbox" class="radio" disabled checked /></td>
-						<td>EN</td>
-						<td>Zombotron</td>
-						<td>-</td>
-						<td>5h 50m</td>
+						<td>Unravel 2</td>
+						<td>4h 50m</td>
 						<td>8.8</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="radio" disabled checked /></td>
+						<td>Zombotron</td>
+						<td>5h 50m</td>
+						<td>8.6</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 
 		<footer>
-			Created by: <a class="link2" href="https://www.levminer.com">Levminer</a> - Games 2.5 - Sourcecode:
+			Created by: <a class="link2" href="https://www.levminer.com">Levminer</a> - Games 3.0.0 - Sourcecode:
 			<a class="link2" href="https://github.com/Levminer/games">GitHub</a>
 		</footer>
 	</body>
