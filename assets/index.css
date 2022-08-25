@@ -1,15 +1,30 @@
+:root {
+	color-scheme: dark;
+}
+
+* {
+	outline: none;
+}
+
 /* body */
 body {
 	color: white;
 	text-align: center;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	font-family: system-ui;
+	background-color: rgb(10, 10, 10);
 }
 
 /* footer */
 footer {
 	font-size: 2rem;
 	margin-bottom: 50px;
+	margin: auto;
+	margin-top: 100px;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 30px;
 }
 
 /* table */
@@ -106,23 +121,41 @@ footer {
 	height: 350px;
 	width: 1000px;
 	background-color: rgb(20, 20, 20);
-}
-
-.input1 {
-	font-size: 1.5rem;
-	background-color: white;
-	color: black;
-	border-color: white;
-}
-
-.input1:hover {
-	background-color: rgb(20, 20, 20);
-	color: rgb(255, 255, 255);
-	border-color: white;
+	position: relative;
+	text-align: center;
+	padding-top: 30px;
+	margin: 130px auto;
+	border-radius: 1.8rem;
 }
 
 .input1::placeholder {
 	color: black;
+}
+
+/* inputs */
+.input1:focus::placeholder,
+.input2:focus::placeholder {
+	transition: 0.2s ease-in;
+	color: transparent;
+}
+
+.input1:hover::placeholder,
+.input2:hover::placeholder {
+	transition: 0.2s ease-in;
+	color: transparent;
+}
+
+.input1 {
+	padding: 15px 30px;
+	border-radius: 1.8rem;
+	cursor: text;
+	text-align: center;
+	transition: 0.2s ease-in;
+	color: rgb(255, 255, 255);
+	font-size: 1.5rem;
+	background-color: white;
+	color: black;
+	border: 1px solid white;
 }
 
 .table-sortable th {
@@ -139,4 +172,28 @@ footer {
 
 .link2:visited {
 	color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 2rem;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1rem;
 }
