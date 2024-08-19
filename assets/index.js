@@ -1,3 +1,5 @@
+let games = []
+
 // ? search 3d games
 const search0 = () => {
 	let input, filter, table, tr, td, i, txtValue
@@ -5,30 +7,18 @@ const search0 = () => {
 	filter = input.value.toUpperCase()
 	table = document.getElementById("table0")
 	tr = table.getElementsByTagName("tr")
-	for (i = 0; i < tr.length; i++) {
-		td = tr[i].getElementsByTagName("td")[1]
-		if (td) {
-			txtValue = td.textContent || td.innerText
-			if (txtValue.toUpperCase().indexOf(filter) > -1) {
-				tr[i].style.display = ""
-			} else {
-				tr[i].style.display = "none"
-			}
-		}
-	}
-}
 
-// ? search 2d games
-const search1 = () => {
-	let input, filter, table, tr, td, i, txtValue
-	input = document.getElementById("searchbar1")
-	filter = input.value.toUpperCase()
-	table = document.getElementById("table1")
-	tr = table.getElementsByTagName("tr")
 	for (i = 0; i < tr.length; i++) {
 		td = tr[i].getElementsByTagName("td")[1]
+		td2 = tr[i].getElementsByTagName("td")[2]
+		td3 = tr[i].getElementsByTagName("td")[3]
+
 		if (td) {
 			txtValue = td.textContent || td.innerText
+			txtValue2 = td2.textContent || td2.innerText
+			txtValue3 = td3.textContent || td3.innerText
+
+			games.push({ name: txtValue, playtime: txtValue2, score: txtValue3 })
 			if (txtValue.toUpperCase().indexOf(filter) > -1) {
 				tr[i].style.display = ""
 			} else {
@@ -36,6 +26,8 @@ const search1 = () => {
 			}
 		}
 	}
+
+	console.log(games)
 }
 
 // ? sort table
